@@ -27,8 +27,8 @@ public class WPIRobotProvider extends RobotProvider{
 
 	@Override
 	public CANSpeedController getCANMotor(int index) {
-		if(motors[index] == null){
-			motors[index] = new CANTalonSpeedController(index);
+		if(canMotors[index] == null){
+			canMotors[index] = new CANTalonSpeedController(index);
 		}
 
 		return canMotors[index];
