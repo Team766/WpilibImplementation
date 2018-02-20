@@ -70,4 +70,10 @@ public class CANTalonSpeedController extends WPI_TalonSRX implements CANSpeedCon
 	public double getSensorVelocity() {
 		return super.getSelectedSensorVelocity(0);
 	}
+	
+	@Override
+	public void setPosition(int position){
+		super.setSelectedSensorPosition(position, 0, 20);
+	}
+	
 }
