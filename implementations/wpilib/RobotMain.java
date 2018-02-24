@@ -4,6 +4,7 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import interfaces.ConfigFileReader;
 import interfaces.MyRobot;
 import interfaces.RobotProvider;
+import lib.ConstantsFileReader;
 
 public class RobotMain extends IterativeRobot implements MyRobot {
 	private MyRobot robot;
@@ -11,6 +12,7 @@ public class RobotMain extends IterativeRobot implements MyRobot {
 	public RobotMain() {
 		try{
 			ConfigFileReader.fileName = "/home/lvuser/robotConfig.txt";
+			ConstantsFileReader.fileName = "/home/lvuser/constants.csv";
 			RobotProvider.instance = new WPIRobotProvider();
 			this.robot = new com.team766.robot.Robot();
 		}catch(Exception e){
