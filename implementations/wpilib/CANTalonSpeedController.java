@@ -37,9 +37,6 @@ public class CANTalonSpeedController extends WPI_TalonSRX implements CANSpeedCon
 		case MotionMagic:
 			ctre_mode = com.ctre.phoenix.motorcontrol.ControlMode.MotionMagic;
 			break;
-		case MotionMagicArc:
-			ctre_mode = com.ctre.phoenix.motorcontrol.ControlMode.MotionMagicArc;
-			break;
 		case MotionProfileArc:
 			ctre_mode = com.ctre.phoenix.motorcontrol.ControlMode.MotionProfileArc;
 			break;
